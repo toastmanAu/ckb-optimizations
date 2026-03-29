@@ -1,0 +1,25 @@
+# Build artifacts
+target/
+*.o
+*.a
+*.so
+*.dylib
+
+# Logs and temp files
+*.log
+/benchmarks/reports/*.log
+/benchmarks/reports/*.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude project config (local only)
+.claude/

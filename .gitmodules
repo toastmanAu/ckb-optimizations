@@ -1,0 +1,20 @@
+[submodule "ckb"]
+	path = ckb
+	url = https://github.com/toastmanAu/ckb.git
+	branch = optimization/parallel-script-groups
+[submodule "ckb-vm"]
+	path = ckb-vm
+	url = https://github.com/toastmanAu/ckb-vm.git
+	branch = optimization/memory-backend-heuristics
+[submodule "sparse-merkle-tree"]
+	path = sparse-merkle-tree
+	url = https://github.com/toastmanAu/sparse-merkle-tree.git
+	branch = optimization/hash-memcpy-microopt
+[submodule "molecule"]
+	path = molecule
+	url = https://github.com/toastmanAu/molecule.git
+	branch = optimization/zero-copy-alloc-reduction
+[submodule "ckb-standalone-debugger"]
+	path = ckb-standalone-debugger
+	url = https://github.com/toastmanAu/ckb-standalone-debugger.git
+	branch = optimization/profiling-harness-baseline

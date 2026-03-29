@@ -1,0 +1,27 @@
+# Optimized [db] and [store] sections for ckb.toml
+#
+# Apply by replacing the corresponding sections in your ckb.toml.
+# See EXPERIMENT.md for full rationale.
+#
+# Changes from default:
+#   cache_size:          256MB → 2GB (8x, for 62GB RAM system)
+#   options_file:        default.db-options → optimized.db-options
+#   header_cache_size:   4096 → 8192 (2x)
+#   cell_data_cache_size: 128 → 4096 (32x — hot UTXO data)
+#   block_tx_hashes:     30 → 256
+#   block_proposals:     30 → 256
+#   block_uncles:        30 → 128
+#
+# Total additional memory: ~1.8GB (mostly block cache)
+# Recommended for systems with ≥8GB RAM. Scale cache_size proportionally.
+
+[db]
+cache_size = 2147483648
+options_file = "optimized.db-options"
+
+[store]
+header_cache_size          = 8192
+cell_data_cache_size       = 4096
+block_proposals_cache_size = 256
+block_tx_hashes_cache_size = 256
+block_uncles_cache_size    = 128

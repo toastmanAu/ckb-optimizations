@@ -22,3 +22,4 @@ Each subdirectory is a self-contained optimization experiment with:
 | Experiment | Component | Status | Branch | Summary |
 |-----------|-----------|--------|--------|---------|
 | [rocksdb-tuning](rocksdb-tuning/) | CKB node | In progress | `optimization/rocksdb-cache-tuning` | Write buffer, cache, and background job tuning |
+| [script-binary-caching](script-binary-caching/) | CKB node | In progress | `optimization/script-verification-caching` | Cross-tx script binary reuse via shared LazyData cache |
